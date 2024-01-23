@@ -34,7 +34,7 @@
 </head>
 <body class="font-[manrope]">
     <header>
-        <nav class="max-w-[335px] lg:max-w-[1170px] mx-auto">
+        <nav class="max-w-[335px]  lg:max-w-[1170px] mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -52,7 +52,7 @@
                       
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey’s</a>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-prime-col gap-0">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -68,6 +68,39 @@
                 </div>
               </div>
         </nav>
+        <!-- slider -->
+        <div class="max-w-[335px] px-0 lg:px-3  lg:max-w-[1170px]  mx-auto">
+          <div class="carousel h-[200px] lg:h-[500px] lg:max-h-[550px] lg:w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/cup2.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/cup3.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./Images/cup4.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
 </body>
 </html>
