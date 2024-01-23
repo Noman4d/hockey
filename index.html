@@ -7,6 +7,19 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'prime-col': '#FF4240',
+        }
+      }
+    }
+  }
+</script>
+
 <!-- Google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +34,7 @@
 </head>
 <body class="font-[manrope]">
     <header>
-        <nav>
+        <nav class="max-w-[335px] lg:max-w-[1170px] mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -39,19 +52,19 @@
                       
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey’s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>BLog</a></li>
-                    <li><a>Contract</a></li>
+                    <li><a class="text-prime-col font-bold">Home</a></li>
+                    <li><a class="font-bold">About</a></li>
+                    <li><a class="font-bold">Pages</a></li>
+                    <li><a class="font-bold">BLog</a></li>
+                    <li><a class="font-bold">Contract</a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn btn-primary-color">Button</a>
+                  <a class="btn bg-prime-col font-bold text-yellow-50">Button</a>
                 </div>
               </div>
         </nav>
