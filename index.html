@@ -7,6 +7,7 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/536d3d577c.js" crossorigin="anonymous"></script>
 <script>
   tailwind.config = {
     theme: {
@@ -34,7 +35,7 @@
 </head>
 <body class="font-[manrope]">
     <header>
-        <nav class="max-w-[335px]  lg:max-w-[1170px] mx-auto">
+        <nav class="max-w-[335px] mt-4 lg:mt-5 lg:max-w-[1170px] mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -63,13 +64,17 @@
                     <li><a class="font-bold">Contract</a></li>
                   </ul>
                 </div>
+               
                 <div class="navbar-end">
-                  <a class="btn bg-prime-col font-bold text-yellow-50">Button</a>
+                  <div class="invisible lg:visible mr-3">
+                    <i class="fa-solid fa-magnifying-glass h-6 w-6 text-gray-400"></i>
+                  </div>
+                  <a class="btn bg-prime-col font-bold text-white w-20 h-10 lg:w-36 lg:h-14">Get Ticket</a>
                 </div>
               </div>
         </nav>
         <!-- slider -->
-        <div class="max-w-[335px] px-0 lg:px-3  lg:max-w-[1170px]  mx-auto">
+        <div class="max-w-[335px] px-0 mt-6 lg:mt-16 lg:px-3  lg:max-w-[1170px]  mx-auto">
           <div class="carousel h-[200px] lg:h-[500px] lg:max-h-[550px] lg:w-full">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./Images/1.png" class="w-full" />
